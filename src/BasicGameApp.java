@@ -66,14 +66,14 @@ public class BasicGameApp implements Runnable {
         } else {
             nemo.isAlive = true;
         }
-        if (shark.hitbox.intersects(nemo.hitbox)) { // shark bounces off nemo
+        if (shark.hitbox.intersects(nemo.hitbox)) { // shark bounces off nemo dx
             if (shark.dx < 0 && nemo.dx > 0) {
                 shark.dx = -shark.dx;
                 nemo.dx = -nemo.dx;
             } else if (shark.dx > 0 && nemo.dx < 0) {
                 shark.dx = -shark.dx;
                 nemo.dx = -nemo.dx;
-                if (shark.dy < 0 && nemo.dy > 0) {
+                if (shark.dy < 0 && nemo.dy > 0) { // shark bounces off nemo dy
                     shark.dy = -shark.dy;
                     nemo.dy = -nemo.dy;
                 } else if (shark.dy > 0 && nemo.dy < 0) {

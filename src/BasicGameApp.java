@@ -73,7 +73,7 @@ public class BasicGameApp implements Runnable {
             } else if (shark.dx > 0 && nemo.dx < 0) {
                 shark.dx = -shark.dx;
                 nemo.dx = -nemo.dx;
-                if (shark.dy < 0 && nemo.dy > 0) { // shark bounces off nemo dy
+                if (shark.dy < 0 && nemo.dy > 0) { // shark bounces off nemo dyy
                     shark.dy = -shark.dy;
                     nemo.dy = -nemo.dy;
                 } else if (shark.dy > 0 && nemo.dy < 0) {

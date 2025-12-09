@@ -106,13 +106,13 @@ public class BasicGameApp implements Runnable {
         g.clearRect(0, 0, WIDTH, HEIGHT);
 
         g.drawImage(background, 0, 0, WIDTH, HEIGHT, null);
-
+// draws nemo
         if (nemo.isAlive) {
             g.drawImage(nemo.aliveImage, nemo.xpos, nemo.ypos, nemo.width, nemo.height, null);
         } else {
             g.drawImage(nemo.deadImage, nemo.xpos, nemo.ypos, nemo.width, nemo.height, null);
         }
-
+// draws dory and shark
         g.drawImage(dory.image, dory.xpos, dory.ypos, dory.width, dory.height, null);
         g.drawImage(shark.image, shark.xpos, shark.ypos, shark.width, shark.height, null);
 
